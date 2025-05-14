@@ -39,6 +39,7 @@ function Header() {
         setNotificationDrop(null);
     };
 
+    
     return (
         <>
             <header className='d-flex align-items-center'>
@@ -169,24 +170,6 @@ function Header() {
 
                                     <button className='btn btn-primary' style={{width:"100%", padding:"5px", marginTop:"5px", fontSize:"12px", textTransform:"capitalize"}}>View all notifications</button>
                                 </div>
-                                {/* <MenuItem onClick={handleNotificationDropClose} sx={{ width: 300 }} >
-                                    <ListItemIcon>
-                                        <PersonAdd fontSize="small" />
-                                    </ListItemIcon>
-                                    My Account
-                                </MenuItem>
-                                <MenuItem onClick={handleNotificationDropClose}>
-                                    <ListItemIcon>
-                                        < IoShieldCheckmark fontSize="medium" />
-                                    </ListItemIcon>
-                                    Reset Password
-                                </MenuItem>
-                                <MenuItem onClick={handleNotificationDropClose} style={{ color: "red" }}>
-                                    <ListItemIcon>
-                                        <Logout fontSize="small" style={{ color: "red" }} />
-                                    </ListItemIcon>
-                                    Logout
-                                </MenuItem> */}
                             </Menu>
 
                             <div className='myAccWrapper'>

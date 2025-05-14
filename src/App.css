@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
-  font-family: "Open Sans", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif !important;
   background: #ebe9e9 !important;
 }
 
-*{margin: 0px; padding: 0px;}
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-header{
+header {
   width: 100%;
   height: 70px;
   background: #fff;
@@ -18,53 +21,387 @@ header{
   z-index: 1000px;
 }
 
-header .logo{text-decoration: unset; }
-header .logo img{width: 50px;}
-header .logo span{
+header .logo {
+  text-decoration: unset;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header .logo span {
   color: rgb(29, 28, 28);
   font-weight: 800;
   font-size: 24px;
   text-decoration: none;
 }
 
-::-webkit-scrollbar{width: 5px !important; height: 5px !important;}
-::-webkit-scrollbar-thumb{background: #0858f7 !important;}
-::-webkit-scrollbar-track{background: transparent !important;}
+.content{
+      width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0858f7 !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
 
 
-header button.rounded-circle{min-width: 40px !important; width: 40px !important; height: 40px !important; background: #f0f5ff !important; color: #292929;}
+header button.rounded-circle {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: #f0f5ff !important;
+  color: #292929;
+}
 
-header button.rounded-circle svg{color: #292929; font-size: 18px !important; transition: all 0 2s ease-in-out;}
-header button.rounded-circle svg:hover{color: #0858f7 !important;}
+header button.rounded-circle svg {
+  color: #292929;
+  font-size: 18px !important;
+  transition: all 0 2s ease-in-out;
+}
 
-.searchBox{background: #f0f5ff; width: 400px; height: 40px; border-radius: 6px; padding: 3px 15px;}
-.searchBox input{background: transparent; border: none; padding-left: 5px; outline: none; font-size: 14px; color: #292929;}
-.searchBox input::-webkit-input-placeholder{color: #292929;}
-.searchBox svg{font-size: 18px; color: #292929;}
+header button.rounded-circle svg:hover {
+  color: #0858f7 !important;
+}
 
-.myAcc{text-align: left !important; color: #000 !important; text-transform: capitalize !important;}
-.myAcc .userImg{display: flex; align-items: center; justify-content: center; overflow: hidden; width: 40px; height: 40px; border: 1px solid #0858f7; padding: 2px; border-radius: 100%;}
-.myAcc .userImg .rounded-circle{display: flex; align-items: center; justify-content: center; overflow: hidden; width: 100%; height: 100%; cursor: pointer; position: relative;}
-.myAcc .userImg .rounded-circle img{object-fit: cover; width: 100%;}
-.userImg{display: flex; align-items: center; justify-content: center; overflow: hidden; width: 40px; height: 40px; border: 1px solid #0858f7; padding: 2px; border-radius: 100%;}
-.userImg .rounded-circle img{object-fit: cover; width: 100%;}
+.searchBox {
+  background: #f0f5ff;
+  width: 400px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 3px 15px;
+}
 
-.myAcc .userInfo{padding: 10px;}
-.myAcc .userInfo h4{font-size: 15px; font-weight: 600; margin-bottom: 0px; color: #292929;}
-.myAcc .userInfo p{margin-top: 0px; font-size: 12px; color: #000; opacity: 0.7;}
+.searchBox input {
+  background: transparent;
+  border: none;
+  padding-left: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #292929;
+}
 
-#account-menu li{font-size: 14px !important; padding: 14px;}
+.searchBox input::-webkit-input-placeholder {
+  color: #292929;
+}
 
-.dropdownInfo h4{
+.searchBox svg {
+  font-size: 18px;
+  color: #292929;
+}
+
+.myAcc {
+  text-align: left !important;
+  color: #000 !important;
+  text-transform: capitalize !important;
+}
+
+.myAcc .userImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0858f7;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.myAcc .userImg .rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.myAcc .userImg .rounded-circle img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.userImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0858f7;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.userImg .rounded-circle img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.myAcc .userInfo {
+  padding: 10px;
+}
+
+.myAcc .userInfo h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #292929;
+}
+
+.myAcc .userInfo p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.7;
+}
+
+#account-menu li {
+  font-size: 14px !important;
+  padding: 14px;
+}
+
+.dropdownInfo h4 {
   font-size: 13px;
   white-space: break-spaces;
   line-height: 21px;
 }
-.dropdownInfo {padding-left: 10px;}
-.dropdownInfo b{font-weight: 600;}
 
-.scroll{
+.dropdownInfo {
+  padding-left: 10px;
+}
+
+.dropdownInfo b {
+  font-weight: 600;
+}
+
+.scroll {
   overflow-y: scroll;
   max-height: 300px;
 }
 
+.main .sidebarWrapper {
+  width: 20%;
+  flex: 0 0 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarWrapper .sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: calc(100% - 70px);
+  padding-bottom: 40px;
+}
+
+.main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+.main .sidebarWrapper:hover .sidebar::-webkit-scrollbar {
+  background: #0858f7 !important;
+}
+
+main .sidebarWrapper .sidebar::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+.main .sidebarWrapper .sidebar ul {
+  margin-bottom: 0px;
+  padding: 10px 15px;
+}
+
+.main .sidebarWrapper .sidebar ul li {
+  list-style: none;
+}
+
+.main .sidebarWrapper .sidebar ul li button {
+  color: #5e5d72;
+  text-align: left;
+  justify-content: left;
+  border-radius: 10px !important;
+  padding: 12px 10px !important;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+}
+
+.main .sidebarWrapper .sidebar ul li button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.main .sidebarWrapper .sidebar ul li button .icon svg {
+  font-size: 22px;
+}
+
+.main .sidebarWrapper .sidebar ul li button * {
+  color: #5e5d72;
+}
+
+.main .sidebarWrapper .sidebar ul li button .arrow {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarWrapper .sidebar ul li button:hover {
+  background: #f1f1f1;
+}
+
+.main .sidebarWrapper .sidebar ul li button.active {
+  background: #f1f1f1 !important;
+}
+
+.main .sidebarWrapper .sidebar ul li button.active .arrow {
+  transform: rotate(90deg);
+}
+
+.main .sidebarWrapper .sidebar ul .submenu {
+  padding: 0px 45px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu::before {
+  content: "";
+  width: 1px;
+  height: 95%;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li {
+  width: 100%;
+  list-style: none;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li a {
+  color: #5e5d72 !important;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.main .sidebarWrapper .sidebar ul .submenu li a:hover {
+  color: #0858f7 !important;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper.colapsed {
+  height: 0px;
+  overflow: hidden;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper.colapsed .submenu {
+  opacity: 0;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper.colapse {
+  height: auto;
+  overflow: hidden;
+}
+
+.main .sidebarWrapper .sidebar ul .submenuWrapper.colapse .submenu {
+  opacity: 1;
+}
+
+.main .sidebarWrapper .sidebar .logoutwrapper {
+  padding: 0px 22px;
+}
+
+.main .sidebarWrapper .sidebar .logoutwrapper .logoutBox {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  padding: 25px;
+  background: #bcd2fd;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logoutwrapper .logoutBox::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: #0858f7;
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  opacity: 0.5;
+}
+
+.logoutwrapper .logoutBox::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #0858f7;
+  border-radius: 100%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  opacity: 0.5;
+}
+
+.logoutwrapper .logoutBox button {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  border-radius: 8px;
+}
+
+.logoutwrapper .logoutBox button svg {
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+.themes.dark{
+  background-color: #333;
+  color: white;
+}
+
+.themes.light {
+  background-color: white;
+  color: black;
+}
